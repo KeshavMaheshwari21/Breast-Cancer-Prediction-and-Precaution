@@ -4,4 +4,5 @@ plotly
 streamlit
 python-dotenv
 google-generativeai
-sklearn
+scikit-learn
+
