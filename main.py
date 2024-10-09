@@ -18,7 +18,7 @@ def get_gemini_response(input_message):
     return response.text
 
 def get_clean_data():
-    data = pd.read_csv("data.csv")
+    data = pd.read_csv("data/data.csv")
     data = data.drop(['Unnamed: 32', 'id'], axis=1)
     data['diagnosis'] = data['diagnosis'].map({'M': 1, 'B': 0})
     return data
@@ -140,8 +140,8 @@ def get_radar_chart(input_data):
     return fig
 
 def add_predictions(input_data):
-    model = pickle.load(open("model.pkl", "rb"))
-    scaler = pickle.load(open("scaler.pkl", "rb"))
+    model = pickle.load(open("model/model.pkl", "rb"))
+    scaler = pickle.load(open("model/scaler.pkl", "rb"))
     
     input_array = np.array(list(input_data.values())).reshape(1, -1)
     input_array_scaled = scaler.transform(input_array)
