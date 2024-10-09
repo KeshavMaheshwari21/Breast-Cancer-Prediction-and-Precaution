@@ -1,3 +1,7 @@
 pandas
-scikit-learn
-pickle5
+numpy
+plotly
+streamlit
+python-dotenv
+google-generativeai
+pickle
