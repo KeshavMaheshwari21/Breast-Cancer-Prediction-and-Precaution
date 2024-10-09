@@ -4,3 +4,4 @@ plotly
 streamlit
 python-dotenv
 google-generativeai
+os
