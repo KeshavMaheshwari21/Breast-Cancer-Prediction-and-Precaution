@@ -168,7 +168,7 @@ def add_predictions(input_data):
     
     st.markdown(
         f'''
-            <div style='margin-right:200px;margin-left:-850px;margin-top:40px;'>
+            <div>
               <h2>Suggested Precautions</h2>
             </div>
             <div style='margin-right:200px;margin-left:-850px;margin-top:10px;'>{precautions}</div>''',
