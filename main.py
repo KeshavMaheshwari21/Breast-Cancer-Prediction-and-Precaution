@@ -147,10 +147,7 @@ def add_predictions(input_data):
     input_array_scaled = scaler.transform(input_array)
     
     prediction = model.predict(input_array_scaled)
-    
-    st.write(" ")
-    st.write(" ")
-    st.subheader("")
+
     st.subheader("Cell cluster prediction")
     if prediction[0] == 0:
         st.write("<span class='diagnosis benign'>Benign</span>", unsafe_allow_html=True)
@@ -171,7 +168,7 @@ def add_predictions(input_data):
             <div>
               <h2>Suggested Precautions</h2>
             </div>
-            <div style='margin-top:10px;'>{precautions}</div>''',
+            <div>{precautions}</div>''',
         unsafe_allow_html=True,
     )
 
